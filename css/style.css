@@ -1,1 +1,55 @@
 @import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap');
+
+:root {
+  --mainBackground: #F5F5F5;
+  --blueBackground: #EAF2FD;
+  --textColor: #464646;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 9.5rem 1fr 9.5rem;
+  background-color: var(--mainBackground);
+  font-family: 'Raleway', sans-serif;
+  color: var(--textColor);
+} 
+
+
+.c-nav {
+  grid-column: 2 / 3;
+  display: flex;
+  justify-content: space-between;
+  margin: 2.156rem 0 4.156rem 0;
+}
+
+.c-nav__icone {
+  display: flex;
+  width: 118px;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1rem; 
+  line-height: 1.174rem;
+}
+
+.c-nav__navegacao {
+  display: flex;
+}
+
+.c-nav__lista {
+  padding-left: 2rem;
+  font-weight: 500;
+}
+
+.c-nav__lista:last-child {
+  font-weight: 700;
+}
+
+.c-header {
+  grid-column: 2 / 3;
+}
+
+.c-sobre {
+  grid-column: 1 / 4;
+}
