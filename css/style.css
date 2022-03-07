@@ -4,15 +4,17 @@
 :root {
   --mainBackground: #F5F5F5;
   --blueBackground: #EAF2FD;
-  --textColor: #464646;
+  --mainColor: #464646;
 }
 
 body {
   display: grid;
-  grid-template-columns: 9.5rem 1fr 9.5rem;
+
+  grid-template-columns: 10.5% 79% 10.5%;
   background-color: var(--mainBackground);
   font-family: 'Raleway', sans-serif;
-  color: var(--textColor);
+  color: var(--mainColor);
+  
 } 
 
 
@@ -25,7 +27,7 @@ body {
 
 .c-nav__icone {
   display: flex;
-  width: 118px;
+  width: 7.375rem;
   justify-content: space-between;
   align-items: center;
   font-weight: 700;
@@ -48,7 +50,47 @@ body {
 
 .c-header {
   grid-column: 2 / 3;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
 }
+
+.c-header__info {
+  
+}
+
+.c-header__titulo {
+  font-weight: 700;
+  font-size: 3.25rem;
+  line-height: 3.816rem;
+  padding: 3.813rem 1.063rem 1.5rem 0;
+
+}
+
+.c-header__paragrafo {
+  font-size: 1.375rem;
+  line-height: 1.614rem;
+  margin-bottom: 1.5rem;
+  padding-right: 1.063rem;
+}
+
+.c-header__social {
+  display: flex;
+}
+
+.c-header__item {
+  padding-right: 2rem;
+  line-height: 1.188rem;
+  font-weight: 500;
+}
+
+.c-header__perfil {
+  height: 23rem;
+  width: 23rem;
+  border-radius: 50%;
+}
+
+
 
 .c-sobre {
   grid-column: 1 / 4;
