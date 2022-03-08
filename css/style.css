@@ -13,10 +13,16 @@ body {
   grid-template-columns: 10.5% 79% 10.5%;
   background-color: var(--mainBackground);
   font-family: 'Raleway', sans-serif;
+  line-height: 1.188rem;
   color: var(--mainColor);
   
 } 
 
+.subtitulo {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.375rem;
+}
 
 .c-nav {
   grid-column: 2 / 3;
@@ -84,14 +90,23 @@ body {
   font-weight: 500;
 }
 
-.c-header__perfil {
+.c-header__avatar {
   height: 23rem;
   width: 23rem;
   border-radius: 50%;
 }
 
-
-
 .c-sobre {
+  background: var(--blueBackground);
   grid-column: 1 / 4;
+  display: grid;
+  grid-template-columns: 10.5% 79% 10.5%;
+  padding: 4rem 0;
 }
+
+.c-sobre__item {
+  grid-column: 2 / 3;
+  width: 46.938rem;
+  padding-top: 1rem;
+}
+
