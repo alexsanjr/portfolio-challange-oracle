@@ -102,6 +102,8 @@ body {
   display: grid;
   grid-template-columns: 10.5% 79% 10.5%;
   padding: 4rem 0;
+  margin-bottom: 2rem;
+  
 }
 
 .c-sobre__item {
@@ -110,3 +112,44 @@ body {
   padding-top: 1rem;
 }
 
+.c-info {
+  grid-column: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5.5rem;
+}
+
+.c-info__lista {
+  margin-top: 2rem;
+  display: flex;
+  
+}
+
+.c-info__item {
+  background: #fff;
+  width: 11rem;
+  height: 10.875rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+}
+
+
+.icone {
+  width:3.125rem;
+  height: 3.125rem;
+  margin-left: 1rem;
+  margin-bottom: 8px;
+}
+
+.c-info__item span {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.c-info__item:nth-child(n+2) {
+  margin-left: 1rem;
+}
